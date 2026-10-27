@@ -165,6 +165,7 @@ namespace ReactorLab
                 var a = lines.FirstOrDefault(x => x.StartsWith("A ")); var b = lines.FirstOrDefault(x => x.StartsWith("B "));
                 if (a == null) return;
                 ShowEval(l.Profile.Count > 0 ? "С параметрами схемы" : "С текущими параметрами", KV(a), null);
+                if (l.Profile.Count > 0) evalArea.Children.Add(Text("Планируемая сборка: параметры закреплены в файле; это не подтверждение покупки улучшений в игре.", 12.5, "TextMuted"));
                 if (b != null && KV(b)["flags"] != KV(a)["flags"]) ShowEval("Если купить все отмеченные", KV(b), KV(a));
                 {
                     var off = new List<string>(); foreach (var r in new[] { "1", "2", "4" }) if (l.G.Contains(r[0]) && val["anA" + r] == "0") off.Add(Parts.Name[r[0]]);

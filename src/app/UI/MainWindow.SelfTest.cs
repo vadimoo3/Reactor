@@ -103,6 +103,20 @@ namespace ReactorLab
             Check("цифры файла совпадают с README (16,145 T/тик, 15,739 Qa)", TextOf(stats).Contains("16,145") || TextOf(stats).Contains("16.145"), TextOf(stats).Trim());
             Check("иконка Protium = Fuel7", Parts.FuelSprite("protium") == 7 && Parts.Icon('1', "protium") != null);
             Shot("02-final");
+            foreach (var planName in new[] { "protium-heat", "monastium-heat" })
+            {
+                var plan = layouts.FirstOrDefault(x => x.Rel == "profit/" + planName + ".txt");
+                if (plan == null) continue;
+                library.SelectedIndex = layouts.IndexOf(plan); await SettleView(plan);
+                var planEnv = EnvFor(plan); var planText = TextOf(evalArea); List<string> planChecks; testCache.TryGetValue(CacheKey(plan), out planChecks);
+                Check("план " + planName + ": закреплены будущие параметры", plan.Profile.Count > 0 && planEnv["fuelPow"] == (plan.Fuel == "monastium" ? "16000" : "10000") && plan.W == 20 && plan.H == 17);
+                Check("план " + planName + ": выводится верная чистая выработка", plan.Fuel == "monastium" ? (planText.Contains("194,824") || planText.Contains("194.824")) : (planText.Contains("213,037") || planText.Contains("213.037")), planText);
+                Check("план " + planName + ": 18 штатных сценариев, 12 отказов при отключении охлаждения", planChecks != null && planChecks.Count(x => x.EndsWith("PASS")) == 18 && planChecks.Count(x => x.EndsWith("FAIL")) == 12);
+                if (plan.Fuel == "monastium") Check("Monastium использует оригинальный Fuel8", Parts.FuelSprite(plan.Fuel) == 8 && Parts.Icon('4', plan.Fuel) != null);
+                Shot("plan-" + planName);
+            }
+            SelectRel("protium/final.txt"); await SettleView(Sel());
+
             var png = Path.Combine(Program.SelfTestDir, "final-picture.png"); SavePicture(fin, png);
             Check("картинка схемы сохраняется (как draw.py)", File.Exists(png) && new FileInfo(png).Length > 20000, new FileInfo(png).Length + " байт");
             var early = layouts.FirstOrDefault(l => l.Fuel == "early");

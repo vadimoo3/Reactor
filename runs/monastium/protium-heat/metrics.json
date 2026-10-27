@@ -3,11 +3,10 @@
   "goal": "heat",
   "counts": {
     "4": 2,
-    "R": 3,
+    "P": 4,
     "K": 184,
     "V": 120,
-    "O": 30,
-    "P": 1
+    "O": 30
   },
   "fuels": [
     {
@@ -15,10 +14,10 @@
       "column": 1,
       "cores": 4,
       "pulse": 12,
-      "reflectors": 2,
+      "reflectors": 0,
       "occupied_7x7": 16,
       "density": 1,
-      "power_T": 384.0,
+      "power_T": 120.0,
       "heat_T": 90.0
     },
     {
@@ -26,34 +25,34 @@
       "column": 20,
       "cores": 4,
       "pulse": 12,
-      "reflectors": 1,
+      "reflectors": 0,
       "occupied_7x7": 16,
       "density": 1,
-      "power_T": 252.0,
+      "power_T": 120.0,
       "heat_T": 90.0
     }
   ],
-  "generation_T": 636.0,
+  "generation_T": 240.0,
   "sale_T": 221.10405632,
   "net_T": 213.03738965333335,
   "heat_T": 180.0,
   "cooling_T": 181.18848000000003,
   "worst_vent_incoming_T": 1.5,
   "individual_vent_rate_T": 1.5099040000000001,
-  "individual_vent_capacity_T": 0.015812499999999997,
+  "individual_vent_capacity_T": 0.025299999999999996,
   "vent_margin": 0.006602666666666757,
   "outlet_rate_per_branch_T": 2.2842,
   "outlet_branches": 120,
-  "hull_capacity_T": 2.765952,
+  "hull_capacity_T": 11.063808,
   "steady_hull_heat_T": 0,
   "fuel_cost_Qa": 29.04,
-  "parts_cost_Qa": 0.15235905500000002,
+  "parts_cost_Qa": 0.15432512,
   "upgrade_cost_Qa": 7727.705543593751,
-  "total_build_cost_Qi": 7.756897902648751,
+  "total_build_cost_Qi": 7.756899868713751,
   "fuel_life_ticks": 3600.0,
   "ticks_per_second": 9.0,
   "fuel_life_seconds": 400.0,
-  "earliest_reflector_life_ticks": 1000000.0,
+  "earliest_reflector_life_ticks": null,
   "ticks_to_5000_EP_reward": 13509,
   "seconds_to_5000_EP_reward": 1501.0,
   "fuel_cycles_to_5000_EP_reward": 4,
@@ -71,7 +70,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -80,7 +79,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -89,7 +88,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -98,7 +97,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -107,7 +106,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -116,7 +115,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -125,7 +124,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -134,7 +133,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -143,7 +142,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -152,7 +151,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -161,7 +160,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -170,7 +169,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -179,7 +178,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -188,7 +187,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -197,7 +196,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -206,7 +205,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -215,7 +214,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -224,7 +223,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -233,7 +232,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -242,7 +241,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -251,7 +250,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -260,7 +259,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -269,7 +268,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -278,7 +277,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -287,7 +286,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -296,7 +295,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -305,7 +304,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -314,7 +313,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -323,7 +322,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -332,7 +331,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -341,7 +340,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -350,7 +349,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -359,7 +358,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -368,7 +367,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -377,7 +376,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -386,7 +385,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -395,7 +394,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -404,7 +403,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -413,7 +412,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -422,7 +421,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -431,7 +430,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -440,7 +439,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -449,7 +448,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -458,7 +457,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -467,7 +466,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -476,7 +475,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -485,7 +484,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -494,7 +493,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -503,7 +502,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -512,7 +511,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -521,7 +520,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -530,7 +529,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -539,7 +538,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -548,7 +547,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -557,7 +556,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -566,7 +565,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -575,7 +574,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -584,7 +583,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -593,7 +592,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -602,7 +601,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -611,7 +610,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -620,7 +619,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -629,7 +628,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -638,7 +637,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -647,7 +646,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -656,7 +655,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -665,7 +664,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -674,7 +673,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -683,7 +682,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -692,7 +691,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -701,7 +700,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -710,7 +709,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -719,7 +718,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -728,7 +727,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -737,7 +736,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -746,7 +745,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -755,7 +754,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -764,7 +763,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -773,7 +772,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -782,7 +781,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -791,7 +790,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -800,7 +799,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -809,7 +808,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -818,7 +817,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -827,7 +826,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -836,7 +835,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -845,7 +844,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -854,7 +853,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -863,7 +862,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -872,7 +871,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -881,7 +880,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -890,7 +889,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -899,7 +898,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -908,7 +907,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -917,7 +916,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -926,7 +925,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -935,7 +934,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -944,7 +943,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -953,7 +952,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -962,7 +961,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -971,7 +970,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -980,7 +979,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -989,7 +988,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -998,7 +997,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -1007,7 +1006,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -1016,7 +1015,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -1025,7 +1024,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -1034,7 +1033,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -1043,7 +1042,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -1052,7 +1051,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -1061,7 +1060,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -1070,7 +1069,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -1079,7 +1078,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -1088,7 +1087,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -1097,7 +1096,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -1106,7 +1105,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -1115,7 +1114,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -1124,7 +1123,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -1133,7 +1132,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     },
     {
@@ -1142,7 +1141,7 @@
       "outlets": 1,
       "incoming_T": 1.5,
       "cooling_T": 1.5099040000000001,
-      "storage_T": 0.015812499999999997,
+      "storage_T": 0.025299999999999996,
       "remaining_after_vent_T": 0.0
     }
   ],

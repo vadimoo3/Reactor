@@ -57,3 +57,10 @@ KKKKKKKKKKKKKKKKKKKK
 @cK=0.65536
 @cR=5e-06
 @anObjective=profit
+@pav=10000.0
+@phs=0.01
+@pex=0.006
+@pre=0.01
+@pch=100000.0
+@pwi=11920.928955078125
+@pli=10000.0

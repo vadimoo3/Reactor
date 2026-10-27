@@ -21,6 +21,11 @@ base = {k: v for k, v in os.environ.items() if not k.startswith("RX_")}
 for name, result in results.items():
     dest = folder / name
     params = dict(line.split("=", 1) for line in (dest / "parameters.txt").read_text(encoding="utf-8").splitlines())
+    target = profiles[name]["levels"]
+    for key, index, cost, multiplier in [("pav", 27, 1000, 100), ("phs", 26, 1000, 100), ("pex", 28, 600, 100),
+                                          ("pre", 29, 1000, 100), ("pch", 22, 10000, 100),
+                                          ("pwi", 13, 5000, 5), ("pli", 15, 100, 10)]:
+        params[key] = str(cost * multiplier ** target[index] / 1e15)
     source = Path(result["manifest"][0][0])
     lines = source.read_text(encoding="utf-8").splitlines()
     width, height = int(params["anW"]), int(params["anH"])
@@ -134,6 +139,7 @@ for name, result in results.items():
                   "rate0", "capBoost", "vr0", "ventBoost", "vc0", "sinkBoost", "ec0", "reBoost", "ccap", "kcap",
                   "hullPer", "drain", "sellB", "sellLvl", "sellPct", "bEx", "bAv", "bHs", "bRe", "bCh",
                   "budget", "f1", "f2", "f4", "cE", "cO", "cI", "cV", "cC", "cP", "cK", "cR", "anObjective"]
+    model_keys += ["pav", "phs", "pex", "pre", "pch", "pwi", "pli"]
     published.write_text(" ".join(header) + "\n" + "\n".join(lines[1:]) + "\n" +
                          "\n".join("@" + key + "=" + params[key] for key in model_keys) + "\n", encoding="utf-8")
     summary[name] = {k: v for k, v in metrics.items() if k != "vent_loads"}
