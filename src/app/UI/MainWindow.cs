@@ -29,18 +29,17 @@ namespace ReactorLab
 
         List<Param> pars = new List<Param>(); List<Tool> tools = new List<Tool>(); Dictionary<string, string> groupTitle = new Dictionary<string, string>();
         Dictionary<string, string> val = new Dictionary<string, string>();
-        class Stage { public string Label, Tool, Dir, Need; public bool Pick; public Gen Gen; public Func<List<Stage>> Expand; public Dictionary<string, string> Env = new Dictionary<string, string>(); }
-        // Генератор кандидатов для адаптивного распределения времени: сколько попыток в секунду и как заполнить параметры на заданное время.
-        class Gen { public string Id, Label, Tool; public Action<Dictionary<string, string>, double> Fill; public double Score = -1, Share; }
+        class Stage { public string Label, Tool, Dir; public Dictionary<string, string> Env = new Dictionary<string, string>(); }
         // Лучший результат поиска для переключения стрелками: файл, уровень надёжности, чистая мощность, производство, цена, заполнение.
         class Best { public string File; public int Tier; public double Net, Power, Cost, Fill; public string Src; }
         static readonly string[][] Methods = {
-            new[] { "blocks", "Блоки", "Все готовые конструкции архива: блоки Protium с доводкой, модули 3×3, прямые схемы, прибыльные группы с валидатором, ранняя модель. Лучшее доводится отжигом." },
-            new[] { "random", "Полный рандом", "Случайные сетки и мутации эталона, лучший кандидат доводится отжигом." },
-            new[] { "improve", "Улучшение", "Доводит схему, выбранную в списке. Хуже исходной не станет." },
-            new[] { "tile", "Блоками", "Находит в выбранной схеме (например, после полного рандома) повторяющийся блок и строит из него упорядоченную рабочую схему." } };
+            new[] { "blocks", "Блоки", "Единый поиск с приоритетом модулей и структур охлаждения; все операторы обмениваются кандидатами." },
+            new[] { "random", "Полный рандом", "Единый поиск с приоритетом случайных полей и мутаций; доступны также модули, скрещивание и восстановление охлаждения." },
+            new[] { "improve", "Улучшение", "Единый поиск от выбранной схемы с сохранением проверенного исходного результата." },
+            new[] { "tile", "Блоками", "Единый поиск от выбранной схемы с приоритетом повторяемых фрагментов и модулей." } };
         static readonly int[] TimePresets = { 5, 60, 300 };
         Dictionary<string, string> EnvFor(string fuel) { var e = Env(); foreach (var kv in FuelCatalog.Env(fuel)) e[kv.Key] = kv.Value; return e; }
+        Dictionary<string, string> EnvFor(Layout layout) { var e = EnvFor(layout.Fuel); foreach (var kv in layout.Profile) if (pars.Any(p => p.Key == kv.Key && (p.Grp == "engine" || p.Grp == "save" || p.Grp == "price" || p.Key == "fuelName" || p.Key == "anObjective"))) e[kv.Key] = kv.Value; return e; }
 
         Dictionary<string, ToggleButton> methodBtn = new Dictionary<string, ToggleButton>(); StackPanel formHost;
         Button goBtn; TextBlock status, saveSummary; ProgressBar prog; TextBox log; ToggleButton logToggle;
@@ -126,6 +125,7 @@ namespace ReactorLab
             body.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
             var left = BuildLeft(); body.Children.Add(left);
             var right = BuildLayoutView(); Grid.SetColumn(right, 1); body.Children.Add(right);
+            var calc = BuildCalculator(); Grid.SetRow(calc, 1); g.Children.Add(calc);
             drawer = BuildDrawer(); Grid.SetRow(drawer, 1); g.Children.Add(drawer);
             return g;
         }

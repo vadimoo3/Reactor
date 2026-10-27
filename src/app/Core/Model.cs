@@ -22,5 +22,5 @@ namespace ReactorLab
 {
     class Param { public string Grp, Key, Label, Def, Opts; public char Kind; }
     class Tool { public string Id, Title, Dir, Desc; public string[] Groups; }
-    class Layout { public string Path, Rel, Header, Fuel = "protium"; public int W, H; public string G = ""; public DateTime Time; }
+    class Layout { public string Path, Rel, Header, Fuel = "protium"; public int W, H; public string G = ""; public DateTime Time; public Dictionary<string, string> Profile = new Dictionary<string, string>(); }
 }

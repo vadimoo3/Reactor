@@ -1,0 +1,297 @@
+{
+  "fuel": "monastium",
+  "goal": "profit",
+  "counts": {
+    "2": 3,
+    "R": 4,
+    "K": 302,
+    "P": 1,
+    "V": 24,
+    "O": 6
+  },
+  "fuels": [
+    {
+      "row": 1,
+      "column": 1,
+      "cores": 2,
+      "pulse": 4,
+      "reflectors": 2,
+      "occupied_7x7": 16,
+      "density": 0.6799999999999999,
+      "power_T": 139.264,
+      "heat_T": 16.0
+    },
+    {
+      "row": 1,
+      "column": 3,
+      "cores": 2,
+      "pulse": 4,
+      "reflectors": 3,
+      "occupied_7x7": 24,
+      "density": 0.52,
+      "power_T": 143.10400000000004,
+      "heat_T": 16.0
+    },
+    {
+      "row": 2,
+      "column": 2,
+      "cores": 2,
+      "pulse": 4,
+      "reflectors": 3,
+      "occupied_7x7": 25,
+      "density": 0.5,
+      "power_T": 137.60000000000002,
+      "heat_T": 16.0
+    }
+  ],
+  "generation_T": 419.968,
+  "sale_T": 362.89904895999996,
+  "net_T": 357.39904895999996,
+  "heat_T": 48.0,
+  "cooling_T": 53.249011200000005,
+  "worst_vent_incoming_T": 2.0,
+  "individual_vent_rate_T": 2.2187088000000004,
+  "individual_vent_capacity_T": 0.014231249999999999,
+  "vent_margin": 0.10935440000000018,
+  "outlet_rate_per_branch_T": 3.7178999999999998,
+  "outlet_branches": 24,
+  "hull_capacity_T": 2.765952,
+  "steady_hull_heat_T": 0,
+  "fuel_cost_Qa": 1900.8000000000002,
+  "parts_cost_Qa": 0.20479758800000003,
+  "upgrade_cost_Qa": 5227.705543593751,
+  "total_build_cost_Qi": 7.12871034118175,
+  "fuel_life_ticks": 345600.0,
+  "ticks_per_second": 9.0,
+  "fuel_life_seconds": 38400.0,
+  "earliest_reflector_life_ticks": 666666.6666666666,
+  "ticks_to_5000_EP_reward": 50656,
+  "seconds_to_5000_EP_reward": 5628.444444444444,
+  "fuel_cycles_to_5000_EP_reward": 1,
+  "fuel_expense_to_5000_EP_reward_Qi": 1.9008000000000003,
+  "money_sold_to_5000_EP_reward_Qi": 18.38301422411776,
+  "cash_minus_full_fuel_purchases_to_5000_EP_reward_Qi": 16.482214224117758,
+  "actual_heat_goal_Qi": 3.0142948425824883,
+  "validation_passed": 18,
+  "validation_failed_faults": 12,
+  "steps": 1036800.0,
+  "vent_loads": [
+    {
+      "row": 3,
+      "column": 14,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 4,
+      "column": 13,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 4,
+      "column": 15,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 5,
+      "column": 10,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 5,
+      "column": 14,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 6,
+      "column": 9,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 6,
+      "column": 11,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 7,
+      "column": 10,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 8,
+      "column": 4,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 9,
+      "column": 3,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 9,
+      "column": 5,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 10,
+      "column": 4,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 10,
+      "column": 10,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 11,
+      "column": 3,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 11,
+      "column": 9,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 11,
+      "column": 11,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 12,
+      "column": 2,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 12,
+      "column": 4,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 12,
+      "column": 10,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 13,
+      "column": 3,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 14,
+      "column": 2,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 15,
+      "column": 1,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 15,
+      "column": 3,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    },
+    {
+      "row": 16,
+      "column": 2,
+      "outlets": 1,
+      "incoming_T": 2.0,
+      "cooling_T": 2.2187088000000004,
+      "storage_T": 0.014231249999999999,
+      "remaining_after_vent_T": 0.0
+    }
+  ],
+  "engine_sha256": "b4ce6679d7589b6aeeabf81030fb2d1337642420d89f8411732f129127adcc1f"
+}

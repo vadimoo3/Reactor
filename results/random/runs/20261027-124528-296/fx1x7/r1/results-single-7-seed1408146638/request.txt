@@ -1,0 +1,5 @@
+exact_count 7
+type single
+attempts 156
+seed 1408146638
+budget_Qa 100

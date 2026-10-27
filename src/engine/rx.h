@@ -40,7 +40,7 @@ inline const RxGroup RX_GROUPS[]={
 };
 
 inline const RxTool RX_TOOLS[]={
- {"an","Отжиг: свободный поиск раскладки (многопоточный)","anneal","an,save,price,engine","Имитация отжига по сетке любого размера; каждый кандидат проверяется симуляцией с авариями."},
+ {"an","Отжиг: свободный поиск раскладки (многопоточный)","anneal","an,save,price,engine","Единая популяция: структурные и случайные операторы, отжиг, скрещивание, восстановление охлаждения и общий отбор."},
  {"tl","Блочная организация: повтор лучшего блока по сетке","blocks-tile","tl,an,save,price,engine","Блок w×h из лучших кандидатов, повторённый по всей сетке; отжиг по клеткам блока."},
  {"fr","Полный случайный поиск + проверка топа","full-random","fr,save,price,engine","reactor-full-random: мутации эталона и случайные сетки, затем полная симуляция лучших."},
  {"mo","Перебор модулей 3x3","modules","mo,save,price,engine","reactor-modules: комбинации готовых модулей, цикл 'работа + остывание'."},
@@ -48,7 +48,7 @@ inline const RxTool RX_TOOLS[]={
  {"pv","Валидатор прибыли","profit","pv,save,price,engine","reactor-profit/validate-profit: 4 порядка обхода x пауза между циклами."},
  {"pr","Поиск Protium","protium","pr,save,price,engine","reactor-protium/search: блоки E/V/O/P, Forceful-питание, симуляция с авариями."},
  {"rf","Доводка Protium","protium","rf,save,price,engine","reactor-protium/refine: перебор числа Plating и Exchanger для best.txt."},
- {"pl","Проверка схемы (Protium-модель)","protium","pl,save,price,engine","reactor-protium/validate: 2 порядка обмена x 3 режима + замена топлива."},
+ {"pl","Проверка схемы (Protium-модель)","protium","pl,save,price,engine","Общий симулятор: 6 порядков обработки × штатно, аварии, замена топлива и выгорание."},
  {"dr","Прямой эталон без Exchanger","protium","dr,save,price,engine","reactor-protium/direct-reference: стержни с Reflector и кресты O+V."},
  {"sv","Ранний поиск v2 (Nefelium)","search","sv,early","reactor-search/search-v2: мозаики F/C/I/R, профили улучшений p0..p2."},
  {"hy","Гибрид C+I","search","hy,early","reactor-search/hybrid: вставка Coolant+Inlet в direct-раскладки."},
@@ -73,6 +73,7 @@ inline const RxParam RX_PARAMS[]={
  {"engine","simSteps","Тиков симуляции","6500",'n'},{"engine","faultT","Тик аварии","5500",'n'},{"engine","outFault","Outlet off, тиков","8",'n'},
  {"engine","ventFault","Vent off, тиков","5",'n'},{"engine","expStart","Замена: начало","3600",'n'},{"engine","expEnd","Замена: конец","7200",'n'},
  {"engine","fuelLife","Жизнь стержня, тик","3600",'n'},
+ {"engine","simSkip","Пропуск неизменного состояния","1",'b'},
  // ---- бюджет и цены
  {"price","budget","Бюджет, Qa","19.4504787631017",'n'},{"price","f1","Single, Qa","3",'n'},{"price","f2","Double, Qa","6.6",'n'},
  {"price","f4","Quad, Qa","14.52",'n'},{"price","pav","Цена +1 Active Venting, Qa","1",'n'},{"price","phs","Цена +1 Heat Sinks, Qa","1",'n'},
@@ -97,6 +98,10 @@ inline const RxParam RX_PARAMS[]={
  {"an","anFre","+1 Reinforced","1",'t',""},{"an","anFch","+1 Chrono","0",'t',""},{"an","anM2","2-й порядок обм.","1",'b'},
  {"an","anOut","Тест Outlet off","0",'b'},{"an","anVent","Тест Vent off","0",'b'},{"an","anNoSim","Без симуляции","0",'b'},
  {"an","anNoCool","Не треб. охлажд.","0",'b'},
+ {"an","anLibrary","Папка стартовых схем","",'f'},{"an","anStrategy","Приоритет поиска","blocks",'f'},
+ {"an","anAttempts","Попыток (0 = по времени)","0",'n'},{"an","anPopulation","Размер популяции","96",'n'},
+ {"an","anVerify","Полных проверок за запуск","240",'n'},{"an","anOutFile","Итоговый файл","best.txt",'f'},
+ {"an","anObjective","Цель: profit или heat","profit",'f'},
  // ---- полный случайный
  {"fr","frAttempts","Попыток","100000",'n'},{"fr","frSeed","Seed","123456",'n'},{"fr","frVerify","Проверить топ","50",'n'},
  {"fr","frSteps","Тиков проверки","7200",'n'},{"fr","frMaxF","Макс. стержней","6",'n'},{"fr","frChrono","Chrono 1 из","20",'n'},

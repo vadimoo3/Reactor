@@ -1,0 +1,1 @@
+61 PNG sprites, 32x32 RGBA. Names assigned by user markup: sheet 1 rows Vent, Exchanger, Outlet, Inlet, Coolant, Plate; sheet 2 rows Fuel1-5, Fuel7, Reflector, Capacitor; sheet3 Fuel6. Original-pixel extraction, no resizing.

@@ -36,7 +36,7 @@ namespace ReactorLab
         public static Dictionary<char, int> Tier = SpriteBase.Keys.ToDictionary(c => c, c => 5);
         public static int FuelMain = 7, FuelEarly = 6, FuelF = 5;
         // топливо архива -> номер спрайта: Protium = Fuel7, Nefastium = Fuel6, Dolorium = Fuel5
-        public static int FuelSprite(string fuel) { return fuel == "nefastium" || fuel == "early" ? 6 : fuel == "dolorium" ? 5 : 7; }
+        public static int FuelSprite(string fuel) { return fuel == "monastium" ? 8 : fuel == "nefastium" || fuel == "early" ? 6 : fuel == "dolorium" ? 5 : 7; }
         public static ImageSource Icon(char c, string fuel) { return "124".IndexOf(c) >= 0 ? Sprite("Fuel" + FuelSprite(fuel) + "-" + c) : Icon(c, false); }
         public static FrameworkElement Badge(char c, double size, string fuel) { var img = Icon(c, fuel); return img != null ? SpriteBox(img, size) : Badge(c, size, false); }
         public static string SpriteName(char c, bool early)

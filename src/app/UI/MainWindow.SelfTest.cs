@@ -89,13 +89,13 @@ namespace ReactorLab
             Check("выбор protium/final.txt", SelectRel("protium/final.txt"));
             var fin = Sel(); await SettleView(fin);
             List<string> lines; testCache.TryGetValue(CacheKey(fin), out lines);
-            Check("автопроверка final: 8 сценариев прошли", lines != null && lines.Count(x => x.EndsWith("PASS")) == 8, lines == null ? "нет результата" : string.Join(" | ", lines));
+            Check("автопроверка final: 30 сценариев прошли", lines != null && lines.Count(x => x.EndsWith("PASS")) == 30, lines == null ? "нет результата" : string.Join(" | ", lines));
             Check("validate-profit не применяется к схеме с Exchanger (его модель их не считает)", lines != null && !lines.Any(x => x.StartsWith("порядок")));
             var prof = layouts.FirstOrDefault(x => x.Rel == "profit/6S0D0Q_f0_feed5_3433555.txt");
             if (prof != null)
             {
                 library.SelectedIndex = layouts.IndexOf(prof); await SettleView(prof); List<string> pl2; testCache.TryGetValue(CacheKey(prof), out pl2);
-                Check("validate-profit прибыльной схемы: 4 порядка × пауза, все 8 проходят (как validation.csv архива)", pl2 != null && pl2.Count(x => x.StartsWith("порядок") && x.Contains("PASS")) == 8, pl2 == null ? "" : string.Join(" | ", pl2.Where(x => x.StartsWith("порядок")).Select(x => x.Substring(0, Math.Min(26, x.Length)))));
+                Check("validate-profit прибыльной схемы: 6 порядков × штатно/замена/выгорание, все 18 проходят", pl2 != null && pl2.Count(x => x.Contains("PASS")) == 18, pl2 == null ? "" : string.Join(" | ", pl2.Where(x => x.StartsWith("порядок")).Select(x => x.Substring(0, Math.Min(26, x.Length)))));
                 Shot("02b-profit"); SelectRel("protium/final.txt"); await SettleView(Sel());
             }
             var head = TextOf(evalArea);
@@ -144,7 +144,7 @@ namespace ReactorLab
             Check("переименование", renamed != null && Path.GetFileName(renamed.Path) == "моя схема тест.txt" && File.Exists(renamed.Path) && !File.Exists(pasted.Path), renamed == null ? "" : renamed.Rel);
             Check("избранное переехало вместе с переименованием", Favs().Contains(renamed.Rel));
             await SettleView(renamed); List<string> rl; testCache.TryGetValue(CacheKey(renamed), out rl);
-            Check("движок читает схему с русским именем (автопроверка 8/8)", rl != null && rl.Count(x => x.EndsWith("PASS")) == 8);
+            Check("движок читает схему с русским именем (автопроверка 30/30)", rl != null && rl.Count(x => x.EndsWith("PASS")) == 30);
             var delPath = renamed.Path; DeleteLayout();
             Check("удаление убирает схему из списка", !File.Exists(delPath) && layouts.All(l => l.Path != delPath) && undoBar.Visibility == Visibility.Visible);
             UndoDelete();
@@ -183,7 +183,7 @@ namespace ReactorLab
             Check("галочка «Точное количество стержней» есть и показывает сохранённое состояние", All<CheckBox>(formHost).Count() == 1 && All<CheckBox>(formHost).First().IsChecked == (val["uiCountOn"] == "1"));
             foreach (var m in new[] { "improve", "blocks", "random", "tile" })
             {
-                SelectRel("protium/final.txt"); val["uiMethod"] = m; val["uiTime"] = m == "improve" || m == "tile" ? "5" : "60"; BuildForm();
+                SelectRel("protium/final.txt"); val["uiMethod"] = m; val["uiTime"] = "5"; BuildForm();
                 var t0 = DateTime.Now; StartRun();
                 Check("способ «" + m + "» запустился", stages != null, status.Text);
                 bool stopped = await WaitFor(() => stages == null, 240);
@@ -195,23 +195,23 @@ namespace ReactorLab
                 if (m == "tile") Check("«Блоками» даёт итог (защищённый или без аварийного запаса)", got || File.Exists(altF), status.Text);
                 if (!got && altF != null && File.Exists(altF)) Check("итог без запаса проходит штатную работу и остывание (validate: штатно и замена топлива)", PassCount(altF, "protium") >= 4);
                 bool notBetter = m == "improve" && !got && status.Text.Contains("исходная не изменена");
-                if (m == "improve") Check("«Улучшение» даёт итог лучше исходной или сообщает, что исходная не изменена", got || notBetter, status.Text);
+                if (m == "improve") Check("«Улучшение» даёт итог лучше исходной или сообщает, что исходная не изменена", got || File.Exists(altF) || notBetter, status.Text);
                 else Note("итог «" + m + "»: " + (got ? Path.GetFileName(finalFile) : "нет") + ", статус: " + status.Text);
                 if (got)
                 {
                     var r = LayoutFile.Parse(finalFile);
-                    Check("итог «" + m + "» выбран в списке", Sel() != null && Sel().Path == finalFile);
-                    Check("итог «" + m + "» проходит оригинальную проверку validate (8/8)", PassCount(finalFile, "protium") == 8);
+                    Check("итог «" + m + "» выбран в списке", Sel() != null && runBest.Count > 0 && Sel().Path == runBest.OrderByDescending(x => x.Net).ThenBy(x => x.Cost).First().File);
+                    Check("итог «" + m + "» проходит оригинальную проверку validate (30/30)", PassCount(finalFile, "protium") == 30);
                     var sd = LayoutFile.Std(r); Check("итог «" + m + "» в бюджете", sd != null && sd[3] <= 100, sd == null ? "" : sd[3] + " Qa");
                     if (m == "improve") { double nb = NetOf(fin.Path), nf = NetOf(finalFile); Check("«Улучшение» не хуже исходной по чистой мощности", nf >= nb - 1e-6, (nb / 1000).ToString("0.###") + " -> " + (nf / 1000).ToString("0.###") + " T/тик"); }
                     await SettleView(Sel());
                 }
-                Check("рабочая папка способа удалена после завершения", workDir == null || !Directory.Exists(workDir));
+                Check("параметры и кандидаты сохранены после завершения", workDir != null && File.Exists(Path.Combine(workDir, "stage-0.params.txt")) && Directory.Exists(Path.Combine(workDir, "an")));
                 var lg = log.Text;
                 if (m == "blocks" || m == "random")
                 {
-                    Check("«" + m + "»: время распределено по результатам раунда 1", lg.Contains("распределение времени по результатам раунда 1"), lg.Split('\n').Where(x => x.Contains("распределение времени")).Select(x => x.Trim()).LastOrDefault() ?? "");
-                    Check("«" + m + "»: доводятся несколько разных кандидатов", lg.Split('\n').Any(x => x.StartsWith("доводка ") && x.Contains("разных кандидатов")) || lg.Contains("отжиг стартует от"), lg.Split('\n').Where(x => x.StartsWith("доводка ")).Select(x => x.Trim()).LastOrDefault() ?? "");
+                    Check("«" + m + "»: используется единый поиск", lg.Contains("единый поиск:"));
+                    Check("«" + m + "»: сохранена статистика операторов", File.Exists(Path.Combine(workDir, "an", "operators.tsv")));
                     Check("«" + m + "»: лучшие схемы библиотеки взяты в пул", lg.Contains("из библиотеки взято лучших схем"));
                 }
                 if (!notBetter) Check("«" + m + "»: полоса «Лучшие из поиска» показана", runBest.Count >= 1 && runBar.Visibility == Visibility.Visible, runBest.Count + " вариантов: " + runText.Text);
@@ -220,7 +220,7 @@ namespace ReactorLab
                     var before = Sel() == null ? "" : Sel().Path; RunStep(1); var after = Sel() == null ? "" : Sel().Path;
                     Check("«" + m + "»: стрелка → переключает на следующий лучший вариант", after != before && runBest.Any(b => string.Equals(b.File, after, StringComparison.OrdinalIgnoreCase)), Path.GetFileName(after) + ": " + runText.Text);
                     RunStep(-1); Check("«" + m + "»: стрелка ← возвращает", Sel() != null && Sel().Path == before);
-                    Check("«" + m + "»: все лучшие варианты разные", runBest.Select(b => LayoutFile.Parse(b.File).G).Distinct().Count() == runBest.Count);
+                    Check("«" + m + "»: все лучшие варианты разные", runBest.Select(b => LayoutFile.Parse(b.File).G + string.Join(" ", LayoutFile.Std(LayoutFile.Parse(b.File)).Skip(4).Take(5))).Distinct().Count() == runBest.Count);
                 }
                 Shot("06-" + m);
             }

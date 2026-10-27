@@ -1,0 +1,12 @@
+random_weights_generated 96800
+random_weights_no_fuel 8887
+random_weights_over_budget 68629
+random_weights_simulated 19284
+uniform_generated 48400
+uniform_over_budget 48400
+failure_component_C 1407
+failure_component_E 2578
+failure_component_K 3849
+failure_component_V 3177
+failure_hull 8273
+best_net_B -1e+99

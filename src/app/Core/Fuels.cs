@@ -27,7 +27,8 @@ namespace ReactorLab
         public static readonly Fuel[] All = {
             new Fuel { Id = "protium", Name = "Protium", Heat = "1250", Pow = "2500", F1 = "3", F2 = "6.6", F4 = "14.52", Life = "3600" },
             new Fuel { Id = "nefastium", Name = "Nefastium", Heat = "51.87", Pow = "51.87", F1 = "3.586", F2 = "7.889", F4 = "17.356", Life = "86400" },
-            new Fuel { Id = "dolorium", Name = "Dolorium", Heat = "0.226966", Pow = "0.453932", F1 = null, F2 = null, F4 = "0.018982", Life = "21600" } };
+            new Fuel { Id = "dolorium", Name = "Dolorium", Heat = "0.226966", Pow = "0.453932", F1 = null, F2 = null, F4 = "0.018982", Life = "21600" },
+            new Fuel { Id = "monastium", Name = "Monastium", Heat = "2000", Pow = "16000", F1 = "288", F2 = "633.6", F4 = "1452", Life = "345600" } };
         public static Dictionary<string, string> Env(string id)
         {
             var f = All.FirstOrDefault(x => x.Id == id) ?? All[0]; var d = new Dictionary<string, string>();

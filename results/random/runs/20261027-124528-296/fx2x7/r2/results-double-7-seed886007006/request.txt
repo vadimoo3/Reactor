@@ -1,0 +1,5 @@
+exact_count 7
+type double
+attempts 48
+seed 886007006
+budget_Qa 100

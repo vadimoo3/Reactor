@@ -1,0 +1,26 @@
+[
+  {
+    "test": "historical winner and all 12 operators",
+    "best_T": 21.028012547174
+  },
+  {
+    "test": "same seed and attempts reproduce results",
+    "pass": true
+  },
+  {
+    "test": "parallel validation preserves deterministic results",
+    "pass": true
+  },
+  {
+    "test": "8x7 with exactly nine Single, no upgrades",
+    "pass": true
+  },
+  {
+    "test": "impossible fuel request rejected",
+    "pass": true
+  },
+  {
+    "test": "Quad-only constraints",
+    "pass": true
+  }
+]

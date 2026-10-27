@@ -1,0 +1,1664 @@
+{
+  "version": 1,
+  "store": {
+    "money": 78002634308385.0,
+    "total_money": 1.4685772992018e+18,
+    "money_earned_this_game": 140289319168201.0,
+    "power": 0.0,
+    "total_power_produced": 1.55813204971053e+18,
+    "power_produced_this_game": 140289585615180.0,
+    "heat": 680075203.861337,
+    "total_heat_dissipated": 5.82810969429312e+17,
+    "heat_dissipated_this_game": 94161415282625.5,
+    "exotic_particles": 8.0,
+    "total_exotic_particles": 2959.0
+  },
+  "upgrade_levels": [
+    2,
+    0,
+    0,
+    2,
+    0,
+    0,
+    2,
+    1,
+    0,
+    2,
+    0,
+    0,
+    6,
+    12,
+    8,
+    8,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5,
+    5,
+    4,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    1,
+    1,
+    1,
+    3,
+    1,
+    3,
+    2,
+    4,
+    0,
+    0,
+    0,
+    0,
+    2,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1
+  ],
+  "reactor_heat": 680075203.861337,
+  "stored_power": 0.0,
+  "depleted_protium_count": 0,
+  "paused": false,
+  "replace_mode": true,
+  "total_ticks": 0,
+  "prestige_level": 0,
+  "shop_page": 0,
+  "selected_component_index": -1,
+  "components": [
+    {
+      "name": "Plate5",
+      "x": 0,
+      "y": 15,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Plate4",
+      "x": 0,
+      "y": 14,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Plate4",
+      "x": 0,
+      "y": 13,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 0,
+      "y": 12,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1824.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 0,
+      "y": 10,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1532.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 0,
+      "y": 9,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1530.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel5-2",
+      "x": 0,
+      "y": 7,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 20346.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel5-2",
+      "x": 0,
+      "y": 6,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 20322.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 0,
+      "y": 1,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1499.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 79.0,
+      "depleted": false
+    },
+    {
+      "name": "Plate4",
+      "x": 1,
+      "y": 15,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Plate4",
+      "x": 1,
+      "y": 14,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Plate4",
+      "x": 1,
+      "y": 13,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 1,
+      "y": 12,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1823.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 1,
+      "y": 10,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1532.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 1,
+      "y": 9,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1529.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel5-4",
+      "x": 1,
+      "y": 3,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 20889.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 1,
+      "y": 1,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1498.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 1,
+      "y": 0,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 87.0,
+      "depleted": false
+    },
+    {
+      "name": "Plate4",
+      "x": 2,
+      "y": 15,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Plate4",
+      "x": 2,
+      "y": 14,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Plate4",
+      "x": 2,
+      "y": 13,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 2,
+      "y": 12,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1819.0,
+      "depleted": false
+    },
+    {
+      "name": "Reflector5",
+      "x": 2,
+      "y": 10,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 3996960.0,
+      "depleted": false
+    },
+    {
+      "name": "Reflector5",
+      "x": 2,
+      "y": 3,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 3996915.0,
+      "depleted": false
+    },
+    {
+      "name": "Plate4",
+      "x": 3,
+      "y": 15,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Plate4",
+      "x": 3,
+      "y": 14,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Plate4",
+      "x": 3,
+      "y": 13,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 3,
+      "y": 12,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1819.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 3,
+      "y": 10,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1646.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 3,
+      "y": 9,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1645.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel5-4",
+      "x": 3,
+      "y": 3,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 21043.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 3,
+      "y": 1,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1750.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 3,
+      "y": 0,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1750.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 4,
+      "y": 15,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1835.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 4,
+      "y": 14,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1835.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 4,
+      "y": 13,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1835.0,
+      "depleted": false
+    },
+    {
+      "name": "Reflector5",
+      "x": 4,
+      "y": 12,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 3995167.0,
+      "depleted": false
+    },
+    {
+      "name": "Vent5",
+      "x": 4,
+      "y": 6,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 4,
+      "y": 1,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1751.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 4,
+      "y": 0,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1751.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 5,
+      "y": 12,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1809.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 5,
+      "y": 10,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1640.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 5,
+      "y": 9,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1641.0,
+      "depleted": false
+    },
+    {
+      "name": "Vent5",
+      "x": 5,
+      "y": 7,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Outlet5",
+      "x": 5,
+      "y": 6,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Vent5",
+      "x": 5,
+      "y": 5,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Reflector5",
+      "x": 5,
+      "y": 0,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 3996910.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 6,
+      "y": 12,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1809.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 6,
+      "y": 10,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1640.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 6,
+      "y": 9,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1639.0,
+      "depleted": false
+    },
+    {
+      "name": "Vent5",
+      "x": 6,
+      "y": 6,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 6,
+      "y": 4,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1660.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 6,
+      "y": 3,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1661.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 6,
+      "y": 1,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1757.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 6,
+      "y": 0,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1756.0,
+      "depleted": false
+    },
+    {
+      "name": "Inlet4",
+      "x": 7,
+      "y": 15,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Coolant4",
+      "x": 7,
+      "y": 14,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Inlet4",
+      "x": 7,
+      "y": 13,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Reflector5",
+      "x": 7,
+      "y": 9,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 3996950.0,
+      "depleted": false
+    },
+    {
+      "name": "Reflector5",
+      "x": 7,
+      "y": 4,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 3996894.0,
+      "depleted": false
+    },
+    {
+      "name": "Coolant4",
+      "x": 8,
+      "y": 15,
+      "z": 0,
+      "heat": 244600721.065333,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Outlet4",
+      "x": 8,
+      "y": 14,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Coolant4",
+      "x": 8,
+      "y": 13,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 8,
+      "y": 10,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1553.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 8,
+      "y": 9,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1546.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 8,
+      "y": 7,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1540.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 8,
+      "y": 6,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1538.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 8,
+      "y": 4,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1493.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 8,
+      "y": 3,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1213.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 8,
+      "y": 1,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1124.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 8,
+      "y": 0,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1116.0,
+      "depleted": false
+    },
+    {
+      "name": "Inlet4",
+      "x": 9,
+      "y": 15,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Coolant4",
+      "x": 9,
+      "y": 14,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Inlet4",
+      "x": 9,
+      "y": 13,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 9,
+      "y": 10,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1553.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 9,
+      "y": 9,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1546.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 9,
+      "y": 7,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1541.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 9,
+      "y": 6,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1538.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 9,
+      "y": 4,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1494.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 9,
+      "y": 3,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1214.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 9,
+      "y": 1,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1124.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 9,
+      "y": 0,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1117.0,
+      "depleted": false
+    },
+    {
+      "name": "Reflector5",
+      "x": 10,
+      "y": 10,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 3996942.0,
+      "depleted": false
+    },
+    {
+      "name": "Reflector5",
+      "x": 10,
+      "y": 7,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 3996862.0,
+      "depleted": false
+    },
+    {
+      "name": "Reflector5",
+      "x": 10,
+      "y": 1,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 3996922.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 11,
+      "y": 15,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1798.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 11,
+      "y": 13,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1785.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 11,
+      "y": 12,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1784.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 11,
+      "y": 10,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1630.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 11,
+      "y": 9,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1629.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 11,
+      "y": 7,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1620.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 11,
+      "y": 6,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1619.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 11,
+      "y": 4,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1614.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 11,
+      "y": 3,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1614.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 11,
+      "y": 1,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1609.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 11,
+      "y": 0,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1609.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 12,
+      "y": 15,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1798.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 12,
+      "y": 14,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 12918.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 12,
+      "y": 13,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1785.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 12,
+      "y": 12,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1786.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 12,
+      "y": 10,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1633.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 12,
+      "y": 9,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1630.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 12,
+      "y": 7,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1626.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 12,
+      "y": 6,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1625.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 12,
+      "y": 4,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1615.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 12,
+      "y": 3,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1615.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 12,
+      "y": 1,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1610.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 12,
+      "y": 0,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1610.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 13,
+      "y": 15,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 12926.0,
+      "depleted": false
+    },
+    {
+      "name": "Reflector5",
+      "x": 13,
+      "y": 14,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 3994088.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 13,
+      "y": 13,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 12921.0,
+      "depleted": false
+    },
+    {
+      "name": "Reflector5",
+      "x": 13,
+      "y": 12,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 3995337.0,
+      "depleted": false
+    },
+    {
+      "name": "Reflector5",
+      "x": 13,
+      "y": 7,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 3996840.0,
+      "depleted": false
+    },
+    {
+      "name": "Reflector5",
+      "x": 13,
+      "y": 4,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 3996870.0,
+      "depleted": false
+    },
+    {
+      "name": "Reflector5",
+      "x": 13,
+      "y": 0,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 3996930.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 14,
+      "y": 15,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1803.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 14,
+      "y": 14,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 12923.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 14,
+      "y": 13,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1791.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 14,
+      "y": 12,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1790.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 14,
+      "y": 10,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1780.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 14,
+      "y": 9,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1780.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 14,
+      "y": 7,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1776.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 14,
+      "y": 6,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1776.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 14,
+      "y": 4,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1773.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 14,
+      "y": 3,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1772.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 14,
+      "y": 1,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1766.0,
+      "depleted": false
+    },
+    {
+      "name": "Fuel4-4",
+      "x": 14,
+      "y": 0,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 1765.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 16,
+      "y": 15,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 16,
+      "y": 14,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 16,
+      "y": 13,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 16,
+      "y": 12,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 16,
+      "y": 11,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 16,
+      "y": 10,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 16,
+      "y": 9,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 16,
+      "y": 8,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 16,
+      "y": 7,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 16,
+      "y": 6,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 16,
+      "y": 5,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 16,
+      "y": 4,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 16,
+      "y": 3,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 16,
+      "y": 2,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 16,
+      "y": 1,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 16,
+      "y": 0,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 17,
+      "y": 15,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 17,
+      "y": 14,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 17,
+      "y": 13,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 17,
+      "y": 12,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 17,
+      "y": 11,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 17,
+      "y": 10,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 17,
+      "y": 9,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 17,
+      "y": 8,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 17,
+      "y": 7,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 17,
+      "y": 6,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 17,
+      "y": 5,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 17,
+      "y": 4,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 17,
+      "y": 3,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 17,
+      "y": 2,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 17,
+      "y": 1,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 17,
+      "y": 0,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor5",
+      "x": 18,
+      "y": 15,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor4",
+      "x": 18,
+      "y": 14,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor4",
+      "x": 18,
+      "y": 13,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor4",
+      "x": 18,
+      "y": 12,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor4",
+      "x": 18,
+      "y": 11,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor4",
+      "x": 18,
+      "y": 10,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor4",
+      "x": 18,
+      "y": 9,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor4",
+      "x": 18,
+      "y": 8,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 18,
+      "y": 7,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 18,
+      "y": 6,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 18,
+      "y": 5,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 18,
+      "y": 4,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 18,
+      "y": 3,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 18,
+      "y": 2,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 18,
+      "y": 1,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    },
+    {
+      "name": "Capacitor3",
+      "x": 18,
+      "y": 0,
+      "z": 0,
+      "heat": 0.0,
+      "durability": 0.0,
+      "depleted": false
+    }
+  ]
+}

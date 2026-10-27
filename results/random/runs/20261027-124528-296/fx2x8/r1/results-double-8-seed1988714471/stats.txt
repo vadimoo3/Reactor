@@ -1,0 +1,2 @@
+status NO_SOLUTION_FOUND exact_count 8 type double
+attempts 156 constructed 156 thermal_screen_pass 0 simulated_pass 0 best_net_B -1e+99

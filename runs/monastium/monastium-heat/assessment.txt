@@ -1,0 +1,2 @@
+A power=206893 ptot=206893 net=194824 ntot=194824 heat=176000 cool=177302 cost=4171.35 fuel=4 bad=0 feed=0 deficit=0 budget=4656.48 generated=1185792 flags=00000
+B power=206893 ptot=206893 net=194824 ntot=194824 heat=176000 cool=177302 cost=4171.35 fuel=4 bad=0 feed=0 deficit=0 budget=4656.48 generated=1185792 flags=00000

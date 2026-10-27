@@ -1,0 +1,11 @@
+A power=26028 ptot=26028 net=21028 ntot=21028 heat=7500 cool=7836.93 cost=19.1422 fuel=6 bad=0 feed=0 deficit=0 budget=19.4505 flags=10000
+B power=21000 ptot=21000 net=16000 ntot=16000 heat=7500 cool=7836.93 cost=21.7422 fuel=6 bad=0 feed=0 deficit=0 budget=19.4505 flags=11110
+DYNAMIC power=26028.0125472 net=21028.0125472 cost=19.142210158 bad=0
+  обмен 1, штатно: OK  Exch 0.0% Vent 0.0% Cool 0.0% Корпус 9.5% 
+  обмен 1, Outlet off: СБОЙ  Exch 0.0% Vent 0.0% Cool 0.0% Корпус 85.8% корпус t=5501
+  обмен 1, Vent off: СБОЙ  Exch 0.0% Vent 0.0% Cool 0.0% Корпус 9.5% V t=5500
+  обмен 1, выгорание: OK  Exch 0.0% Vent 0.0% Cool 0.0% Корпус 0.0% 
+  обмен 2, штатно: OK  Exch 0.0% Vent 0.0% Cool 0.0% Корпус 9.5% 
+  обмен 2, Outlet off: СБОЙ  Exch 0.0% Vent 0.0% Cool 0.0% Корпус 85.8% корпус t=5501
+  обмен 2, Vent off: СБОЙ  Exch 0.0% Vent 0.0% Cool 0.0% Корпус 9.5% V t=5500
+  обмен 2, выгорание: OK  Exch 0.0% Vent 0.0% Cool 0.0% Корпус 0.0% 

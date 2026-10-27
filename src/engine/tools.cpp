@@ -67,7 +67,7 @@ int rxRunTool(const std::string&id){
  if(id=="pv")return t_pv::main();
  if(id=="pr")return t_pr::main(0,nullptr);
  if(id=="rf")return t_rf::main();
- if(id=="pl")return t_pl::main(0,nullptr);
+ if(id=="pl")return t_an::validateMain();
  if(id=="dr")return t_dr::main();
  if(id=="sv")return t_sv::main(0,nullptr);
  if(id=="hy")return t_hy::main();

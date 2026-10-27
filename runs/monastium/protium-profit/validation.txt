@@ -1,0 +1,30 @@
+обмен 0 штатно: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS
+обмен 0 Outlet off: Exch=0 Vent=0 Coolant=0 hull=14.4615669 worstVent=-1 корпус t=5500 FAIL
+обмен 0 Vent off: Exch=0 Vent=158.102767 Coolant=0 hull=0 worstVent=44 V t=5500 FAIL
+обмен 0 замена топлива: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS
+обмен 0 выгорание: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS
+обмен 1 штатно: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS
+обмен 1 Outlet off: Exch=0 Vent=0 Coolant=0 hull=14.4615669 worstVent=-1 корпус t=5500 FAIL
+обмен 1 Vent off: Exch=0 Vent=158.102767 Coolant=0 hull=0 worstVent=44 V t=5500 FAIL
+обмен 1 замена топлива: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS
+обмен 1 выгорание: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS
+обмен 2 штатно: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS
+обмен 2 Outlet off: Exch=0 Vent=0 Coolant=0 hull=14.4615669 worstVent=-1 корпус t=5500 FAIL
+обмен 2 Vent off: Exch=0 Vent=158.102767 Coolant=0 hull=0 worstVent=44 V t=5500 FAIL
+обмен 2 замена топлива: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS
+обмен 2 выгорание: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS
+обмен 3 штатно: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS
+обмен 3 Outlet off: Exch=0 Vent=0 Coolant=0 hull=14.4615669 worstVent=-1 корпус t=5500 FAIL
+обмен 3 Vent off: Exch=0 Vent=158.102767 Coolant=0 hull=0 worstVent=44 V t=5500 FAIL
+обмен 3 замена топлива: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS
+обмен 3 выгорание: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS
+обмен 4 штатно: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS
+обмен 4 Outlet off: Exch=0 Vent=0 Coolant=0 hull=14.4615669 worstVent=-1 корпус t=5500 FAIL
+обмен 4 Vent off: Exch=0 Vent=158.102767 Coolant=0 hull=0 worstVent=44 V t=5500 FAIL
+обмен 4 замена топлива: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS
+обмен 4 выгорание: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS
+обмен 5 штатно: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS
+обмен 5 Outlet off: Exch=0 Vent=0 Coolant=0 hull=14.4615669 worstVent=-1 корпус t=5500 FAIL
+обмен 5 Vent off: Exch=0 Vent=158.102767 Coolant=0 hull=0 worstVent=44 V t=5500 FAIL
+обмен 5 замена топлива: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS
+обмен 5 выгорание: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS

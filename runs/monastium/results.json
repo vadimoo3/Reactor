@@ -1,0 +1,218 @@
+{
+  "protium-heat": {
+    "seconds": 8.627333199998247,
+    "manifest": [
+      [
+        "E:\\Desktop\\Reactor\\runs\\monastium\\protium-heat\\best-\u0431\u0435\u0437-\u0437\u0430\u043f\u0430\u0441\u0430.txt",
+        "2",
+        "213037.389653",
+        "221104.05632",
+        "29.192359055",
+        "0",
+        "candidate-1.txt"
+      ],
+      [
+        "E:\\Desktop\\Reactor\\runs\\monastium\\protium-heat\\best-2.txt",
+        "2",
+        "213037.389653",
+        "221104.05632",
+        "29.192359055",
+        "0",
+        "candidate-2.txt"
+      ],
+      [
+        "E:\\Desktop\\Reactor\\runs\\monastium\\protium-heat\\best-3.txt",
+        "2",
+        "213037.389653",
+        "221104.05632",
+        "29.192359055",
+        "0",
+        "candidate-3.txt"
+      ],
+      [
+        "E:\\Desktop\\Reactor\\runs\\monastium\\protium-heat\\best-4.txt",
+        "2",
+        "213037.389653",
+        "221104.05632",
+        "29.192359055",
+        "0",
+        "candidate-4.txt"
+      ],
+      [
+        "E:\\Desktop\\Reactor\\runs\\monastium\\protium-heat\\best-5.txt",
+        "2",
+        "213037.389653",
+        "221104.05632",
+        "29.192359055",
+        "0",
+        "candidate-5.txt"
+      ]
+    ],
+    "assessment": "A power=221104 ptot=221104 net=213037 ntot=213037 heat=180000 cool=181188 cost=29.1924 fuel=2 bad=0 feed=0 deficit=0 budget=2272.29 generated=636000 flags=00000\r\nB power=221104 ptot=221104 net=213037 ntot=213037 heat=180000 cool=181188 cost=29.1924 fuel=2 bad=0 feed=0 deficit=0 budget=2272.29 generated=636000 flags=00000\r\n",
+    "validation": "\u043e\u0431\u043c\u0435\u043d 0 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 0 Outlet off: Exch=0 Vent=0 Coolant=0 hull=65.0770512 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 0 Vent off: Exch=0 Vent=94.8616601 Coolant=0 hull=0 worstVent=3 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 0 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 0 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 1 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 1 Outlet off: Exch=0 Vent=0 Coolant=0 hull=65.0770512 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 1 Vent off: Exch=0 Vent=94.8616601 Coolant=0 hull=0 worstVent=3 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 1 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 1 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 2 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 2 Outlet off: Exch=0 Vent=0 Coolant=0 hull=65.0770512 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 2 Vent off: Exch=0 Vent=94.8616601 Coolant=0 hull=0 worstVent=3 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 2 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 2 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 3 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 3 Outlet off: Exch=0 Vent=0 Coolant=0 hull=65.0770512 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 3 Vent off: Exch=0 Vent=94.8616601 Coolant=0 hull=0 worstVent=3 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 3 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 3 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 4 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 4 Outlet off: Exch=0 Vent=0 Coolant=0 hull=65.0770512 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 4 Vent off: Exch=0 Vent=94.8616601 Coolant=0 hull=0 worstVent=3 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 4 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 4 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 5 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 5 Outlet off: Exch=0 Vent=0 Coolant=0 hull=65.0770512 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 5 Vent off: Exch=0 Vent=94.8616601 Coolant=0 hull=0 worstVent=3 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 5 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 5 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n",
+    "exit_code": 0,
+    "upgrade_cost": 7.727705543593751e+18
+  },
+  "protium-profit": {
+    "seconds": 10.966083600000275,
+    "manifest": [
+      [
+        "E:\\Desktop\\Reactor\\runs\\monastium\\protium-profit\\best-\u0431\u0435\u0437-\u0437\u0430\u043f\u0430\u0441\u0430.txt",
+        "2",
+        "371248.907093",
+        "374915.57376",
+        "13.409276697",
+        "0",
+        "candidate-1.txt"
+      ],
+      [
+        "E:\\Desktop\\Reactor\\runs\\monastium\\protium-profit\\best-2.txt",
+        "2",
+        "371248.907093",
+        "374915.57376",
+        "13.409276697",
+        "0",
+        "candidate-2.txt"
+      ],
+      [
+        "E:\\Desktop\\Reactor\\runs\\monastium\\protium-profit\\best-3.txt",
+        "2",
+        "371248.907093",
+        "374915.57376",
+        "13.409276697",
+        "0",
+        "candidate-3.txt"
+      ],
+      [
+        "E:\\Desktop\\Reactor\\runs\\monastium\\protium-profit\\best-4.txt",
+        "2",
+        "371248.907093",
+        "374915.57376",
+        "13.409276697",
+        "0",
+        "candidate-4.txt"
+      ],
+      [
+        "E:\\Desktop\\Reactor\\runs\\monastium\\protium-profit\\best-5.txt",
+        "2",
+        "371248.907093",
+        "374915.57376",
+        "13.409276697",
+        "0",
+        "candidate-5.txt"
+      ]
+    ],
+    "assessment": "A power=374916 ptot=374916 net=371249 ntot=371249 heat=40000 cool=40739.1 cost=13.4093 fuel=2 bad=0 feed=0 deficit=0 budget=2272.29 generated=388000 flags=00000\r\nB power=374916 ptot=374916 net=371249 ntot=371249 heat=40000 cool=40739.1 cost=13.4093 fuel=2 bad=0 feed=0 deficit=0 budget=2272.29 generated=388000 flags=00000\r\n",
+    "validation": "\u043e\u0431\u043c\u0435\u043d 0 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 0 Outlet off: Exch=0 Vent=0 Coolant=0 hull=14.4615669 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 0 Vent off: Exch=0 Vent=158.102767 Coolant=0 hull=0 worstVent=44 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 0 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 0 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 1 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 1 Outlet off: Exch=0 Vent=0 Coolant=0 hull=14.4615669 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 1 Vent off: Exch=0 Vent=158.102767 Coolant=0 hull=0 worstVent=44 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 1 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 1 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 2 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 2 Outlet off: Exch=0 Vent=0 Coolant=0 hull=14.4615669 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 2 Vent off: Exch=0 Vent=158.102767 Coolant=0 hull=0 worstVent=44 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 2 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 2 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 3 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 3 Outlet off: Exch=0 Vent=0 Coolant=0 hull=14.4615669 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 3 Vent off: Exch=0 Vent=158.102767 Coolant=0 hull=0 worstVent=44 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 3 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 3 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 4 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 4 Outlet off: Exch=0 Vent=0 Coolant=0 hull=14.4615669 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 4 Vent off: Exch=0 Vent=158.102767 Coolant=0 hull=0 worstVent=44 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 4 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 4 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 5 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 5 Outlet off: Exch=0 Vent=0 Coolant=0 hull=14.4615669 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 5 Vent off: Exch=0 Vent=158.102767 Coolant=0 hull=0 worstVent=44 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 5 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 5 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n",
+    "exit_code": 0,
+    "upgrade_cost": 7.727705543593751e+18
+  },
+  "monastium-heat": {
+    "seconds": 6.599581400001625,
+    "manifest": [
+      [
+        "E:\\Desktop\\Reactor\\runs\\monastium\\monastium-heat\\best-\u0431\u0435\u0437-\u0437\u0430\u043f\u0430\u0441\u0430.txt",
+        "2",
+        "194823.765156",
+        "206893.2096",
+        "4171.34973762",
+        "4.1595472291e-14",
+        "candidate-1.txt"
+      ],
+      [
+        "E:\\Desktop\\Reactor\\runs\\monastium\\monastium-heat\\best-2.txt",
+        "2",
+        "194823.765156",
+        "206893.2096",
+        "4171.34973762",
+        "4.1595472291e-14",
+        "candidate-2.txt"
+      ],
+      [
+        "E:\\Desktop\\Reactor\\runs\\monastium\\monastium-heat\\best-3.txt",
+        "2",
+        "194823.765156",
+        "206893.2096",
+        "4171.34973762",
+        "4.1595472291e-14",
+        "candidate-3.txt"
+      ],
+      [
+        "E:\\Desktop\\Reactor\\runs\\monastium\\monastium-heat\\best-4.txt",
+        "2",
+        "194823.765156",
+        "206893.2096",
+        "4171.34973762",
+        "4.1595472291e-14",
+        "candidate-4.txt"
+      ],
+      [
+        "E:\\Desktop\\Reactor\\runs\\monastium\\monastium-heat\\best-5.txt",
+        "2",
+        "194823.765156",
+        "206893.2096",
+        "4171.34973762",
+        "4.1595472291e-14",
+        "candidate-5.txt"
+      ]
+    ],
+    "assessment": "A power=206893 ptot=206893 net=194824 ntot=194824 heat=176000 cool=177302 cost=4171.35 fuel=4 bad=0 feed=0 deficit=0 budget=4656.48 generated=1185792 flags=00000\r\nB power=206893 ptot=206893 net=194824 ntot=194824 heat=176000 cool=177302 cost=4171.35 fuel=4 bad=0 feed=0 deficit=0 budget=4656.48 generated=1185792 flags=00000\r\n",
+    "validation": "\u043e\u0431\u043c\u0435\u043d 0 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 0 Outlet off: Exch=0 Vent=0 Coolant=0 hull=63.6308945 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 0 Vent off: Exch=0 Vent=92.7536232 Coolant=0 hull=0 worstVent=13 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 0 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 0 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 1 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 1 Outlet off: Exch=0 Vent=0 Coolant=0 hull=63.6308945 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 1 Vent off: Exch=0 Vent=92.7536232 Coolant=0 hull=0 worstVent=13 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 1 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 1 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 2 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=4.15954723e-14 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 2 Outlet off: Exch=0 Vent=0 Coolant=0 hull=63.6308945 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 2 Vent off: Exch=0 Vent=92.7536232 Coolant=0 hull=4.15954723e-14 worstVent=13 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 2 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=4.15954723e-14 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 2 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=4.15954723e-14 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 3 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=4.15954723e-14 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 3 Outlet off: Exch=0 Vent=0 Coolant=0 hull=63.6308945 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 3 Vent off: Exch=0 Vent=92.7536232 Coolant=0 hull=4.15954723e-14 worstVent=13 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 3 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=4.15954723e-14 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 3 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=4.15954723e-14 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 4 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=4.15954723e-14 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 4 Outlet off: Exch=0 Vent=0 Coolant=0 hull=63.6308945 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 4 Vent off: Exch=0 Vent=92.7536232 Coolant=0 hull=4.15954723e-14 worstVent=13 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 4 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=4.15954723e-14 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 4 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=4.15954723e-14 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 5 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=4.15954723e-14 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 5 Outlet off: Exch=0 Vent=0 Coolant=0 hull=63.6308945 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 5 Vent off: Exch=0 Vent=92.7536232 Coolant=0 hull=4.15954723e-14 worstVent=13 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 5 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=4.15954723e-14 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 5 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=4.15954723e-14 worstVent=-1  PASS\r\n",
+    "exit_code": 0,
+    "upgrade_cost": 5.343519752578125e+18
+  },
+  "monastium-profit": {
+    "seconds": 10.17803560000175,
+    "manifest": [
+      [
+        "E:\\Desktop\\Reactor\\runs\\monastium\\monastium-profit\\best-\u0431\u0435\u0437-\u0437\u0430\u043f\u0430\u0441\u0430.txt",
+        "2",
+        "357399.04896",
+        "362899.04896",
+        "1901.00479759",
+        "0",
+        "candidate-1.txt"
+      ],
+      [
+        "E:\\Desktop\\Reactor\\runs\\monastium\\monastium-profit\\best-2.txt",
+        "2",
+        "357399.04896",
+        "362899.04896",
+        "1901.00479759",
+        "0",
+        "candidate-2.txt"
+      ],
+      [
+        "E:\\Desktop\\Reactor\\runs\\monastium\\monastium-profit\\best-3.txt",
+        "2",
+        "357399.04896",
+        "362899.04896",
+        "1901.00479759",
+        "0",
+        "candidate-3.txt"
+      ],
+      [
+        "E:\\Desktop\\Reactor\\runs\\monastium\\monastium-profit\\best-4.txt",
+        "2",
+        "357399.04896",
+        "362899.04896",
+        "1901.00479759",
+        "0",
+        "candidate-4.txt"
+      ],
+      [
+        "E:\\Desktop\\Reactor\\runs\\monastium\\monastium-profit\\best-5.txt",
+        "2",
+        "357399.04896",
+        "362899.04896",
+        "1901.00479759",
+        "0",
+        "candidate-5.txt"
+      ]
+    ],
+    "assessment": "A power=362899 ptot=362899 net=357399 ntot=357399 heat=48000 cool=53249 cost=1901 fuel=3 bad=0 feed=0 deficit=0 budget=4772.29 generated=419968 flags=00000\r\nB power=362899 ptot=362899 net=357399 ntot=357399 heat=48000 cool=53249 cost=1901 fuel=3 bad=0 feed=0 deficit=0 budget=4772.29 generated=419968 flags=00000\r\n",
+    "validation": "\u043e\u0431\u043c\u0435\u043d 0 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 0 Outlet off: Exch=0 Vent=0 Coolant=0 hull=17.3538803 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 0 Vent off: Exch=0 Vent=140.535793 Coolant=0 hull=0 worstVent=53 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 0 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 0 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 1 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 1 Outlet off: Exch=0 Vent=0 Coolant=0 hull=17.3538803 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 1 Vent off: Exch=0 Vent=140.535793 Coolant=0 hull=0 worstVent=53 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 1 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 1 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 2 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 2 Outlet off: Exch=0 Vent=0 Coolant=0 hull=17.3538803 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 2 Vent off: Exch=0 Vent=140.535793 Coolant=0 hull=0 worstVent=53 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 2 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 2 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 3 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 3 Outlet off: Exch=0 Vent=0 Coolant=0 hull=17.3538803 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 3 Vent off: Exch=0 Vent=140.535793 Coolant=0 hull=0 worstVent=53 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 3 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 3 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 4 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 4 Outlet off: Exch=0 Vent=0 Coolant=0 hull=17.3538803 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 4 Vent off: Exch=0 Vent=140.535793 Coolant=0 hull=0 worstVent=53 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 4 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 4 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 5 \u0448\u0442\u0430\u0442\u043d\u043e: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 5 Outlet off: Exch=0 Vent=0 Coolant=0 hull=17.3538803 worstVent=-1 \u043a\u043e\u0440\u043f\u0443\u0441 t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 5 Vent off: Exch=0 Vent=140.535793 Coolant=0 hull=0 worstVent=53 V t=5500 FAIL\r\n\u043e\u0431\u043c\u0435\u043d 5 \u0437\u0430\u043c\u0435\u043d\u0430 \u0442\u043e\u043f\u043b\u0438\u0432\u0430: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n\u043e\u0431\u043c\u0435\u043d 5 \u0432\u044b\u0433\u043e\u0440\u0430\u043d\u0438\u0435: Exch=0 Vent=0 Coolant=0 hull=0 worstVent=-1  PASS\r\n",
+    "exit_code": 0,
+    "upgrade_cost": 5.227705543593751e+18
+  }
+}

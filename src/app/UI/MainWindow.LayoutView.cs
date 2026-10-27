@@ -158,13 +158,13 @@ namespace ReactorLab
         {
             Kill(evalProc); evalProc = null; evalArea.Children.Clear();
             var l = Sel(); if (l == null || l.Fuel == "early") return;
-            var env = EnvFor(l.Fuel); env["plFile"] = l.Path; var lines = new List<string>(); Process me = null;
+            var env = EnvFor(l); env["plFile"] = l.Path; var lines = new List<string>(); Process me = null;
             me = evalProc = Engine.Start("--tool ev", Results, env, line => { if (evalProc == me) lines.Add(line); }, code =>
             {
                 if (evalProc != me || Sel() != l) return; evalProc = null;
                 var a = lines.FirstOrDefault(x => x.StartsWith("A ")); var b = lines.FirstOrDefault(x => x.StartsWith("B "));
                 if (a == null) return;
-                ShowEval("С вашим сейвом сейчас", KV(a), null);
+                ShowEval(l.Profile.Count > 0 ? "С параметрами схемы" : "С текущими параметрами", KV(a), null);
                 if (b != null && KV(b)["flags"] != KV(a)["flags"]) ShowEval("Если купить все отмеченные", KV(b), KV(a));
                 {
                     var off = new List<string>(); foreach (var r in new[] { "1", "2", "4" }) if (l.G.Contains(r[0]) && val["anA" + r] == "0") off.Add(Parts.Name[r[0]]);
@@ -178,12 +178,13 @@ namespace ReactorLab
             var t = Text(title, 12.5, "TextMuted"); t.Width = 230; t.VerticalAlignment = VerticalAlignment.Center; row.Children.Add(t);
             Func<string, double, string> delta = (k, v) => baseE == null ? "" : (Math.Abs(v - D(baseE, k)) < 1e-9 ? "" : (v - D(baseE, k) > 0 ? "  +" : "  ") + ((v - D(baseE, k)) / (k == "cost" ? 1 : 1000)).ToString("0.###"));
             double heat = D(e, "heat"), cool = D(e, "cool"), cost = D(e, "cost"), budget = D(e, "budget"), ptot = D(e, "ptot");
-            double ntot = D(e, "ntot");
+            double ntot = D(e, "ntot"); double generated = e.ContainsKey("generated") ? D(e, "generated") : ptot;
             Mini(row, "Чистыми", (ntot / 1000).ToString("0.###") + " T/тик" + delta("ntot", ntot), ntot > 0 ? "Accent" : "Danger");
-            Mini(row, "Производство", (ptot / 1000).ToString("0.###") + delta("ptot", ptot), "Text");
+            Mini(row, "Производство", (generated / 1000).ToString("0.###") + delta("ptot", ptot), "Text");
+            if (Math.Abs(generated - ptot) > 1e-6) Mini(row, "Продажа", (ptot / 1000).ToString("0.###") + " T/тик", "Text");
             Mini(row, "Охлаждение", (cool / 1000).ToString("0.###") + " из " + (heat / 1000).ToString("0.###") + " T/тик" + delta("cool", cool), cool >= heat ? "Text" : "Danger");
             Mini(row, "Цена", cost.ToString("0.###") + " из " + budget.ToString("0.##") + " Qa" + delta("cost", cost), cost <= budget ? "Text" : "Danger");
-            if (D(e, "bad") > 0) Mini(row, "Ошибка", "стержень рядом с Capacitor", "Danger");
+            if (D(e, "bad") > 0) Mini(row, "Ошибка", "недопустимая схема или перегрев", "Danger");
             evalArea.Children.Add(row);
         }
         void Mini(Panel row, string k, string v, string brush)
@@ -194,14 +195,14 @@ namespace ReactorLab
         }
         // ---------- автопроверка выбранной схемы ----------
         void RunTestsSoon() { Kill(testProc); testProc = null; testDelay.Stop(); testDelay.Start(); }
-        string CacheKey(Layout l) { return l.Path + "|" + l.Time.Ticks; }
+        string CacheKey(Layout l) { var env = EnvFor(l); return l.Path + "|" + l.Time.Ticks + "|" + string.Join(";", pars.Where(x => x.Grp == "engine" || x.Grp == "early" || x.Grp == "save" || x.Grp == "price" || x.Key == "plSteps").OrderBy(x => x.Key).Select(x => x.Key + "=" + env[x.Key])); }
         // Автопроверка = оригинальные проверки архива для выбранной схемы:
         //  текущая модель — validate (reactor-protium) + validate-profit (reactor-profit: 4 порядка обработки × пауза между циклами);
         //  ранняя модель — thermal-check (reactor-search: потеря Outlet × истечение топлива).
         void RunTests()
         {
             var l = Sel(); if (l == null) { testArea.Content = null; return; }
-            List<string> cached; if (testCache.TryGetValue(CacheKey(l), out cached)) { testArea.Content = l.Fuel == "early" ? EarlyTable(cached, false) : TestTable(cached, false); return; }
+            string cacheKey = CacheKey(l); List<string> cached; if (testCache.TryGetValue(cacheKey, out cached)) { testArea.Content = l.Fuel == "early" ? EarlyTable(cached, false) : TestTable(cached, false); return; }
             var tmp = Path.Combine(Path.GetTempPath(), "ReactorLab-test"); Directory.CreateDirectory(tmp);
             var lines = new List<string>(); Process me = null;
             if (l.Fuel == "early")
@@ -214,24 +215,18 @@ namespace ReactorLab
                 {
                     if (testProc != me) return; testProc = null;
                     if (lines.Count(x => x.Contains("потеря выхода")) < 4) { testArea.Content = Text("Проверка не выполнена: " + string.Join(" ", lines), 12.5, "Danger"); return; }
-                    testCache[CacheKey(l)] = lines; if (Sel() == l) testArea.Content = EarlyTable(lines, false);
+                    testCache[cacheKey] = lines; if (Sel() == l) testArea.Content = EarlyTable(lines, false);
                 });
                 return;
             }
-            if (l.W != 19 || l.H != 16) { testArea.Content = Text("Оригинальные проверки архива рассчитаны на поле 19×16.", 12.5, "TextMuted"); return; }
             testArea.Content = TestTable(lines, true);
-            var env2 = EnvFor(l.Fuel); env2["plFile"] = l.Path; env2["pvFile"] = l.Path;
+            var env2 = EnvFor(l); env2["plFile"] = l.Path;
             me = testProc = Engine.Start("--tool pl", tmp, env2, line => { if (testProc == me) lines.Add(line); }, code =>
             {
-                if (testProc != me) return;
-                if (lines.Count(x => x.EndsWith("PASS") || x.EndsWith("FAIL")) < 8) { testProc = null; testArea.Content = Text("Проверка не выполнена: " + string.Join(" ", lines), 12.5, "Danger"); return; }
-                if (l.G.IndexOf('E') >= 0) { testProc = null; testCache[CacheKey(l)] = lines; if (Sel() == l) testArea.Content = TestTable(lines, false); return; }
-                if (Sel() == l) testArea.Content = TestTable(lines, true);
-                me = testProc = Engine.Start("--tool pv", tmp, env2, line => { if (testProc == me && line.StartsWith("порядок")) lines.Add(line); }, code2 =>
-                {
-                    if (testProc != me) return; testProc = null;
-                    testCache[CacheKey(l)] = lines; if (Sel() == l) testArea.Content = TestTable(lines, false);
-                });
+                if (testProc != me) return; testProc = null;
+                if (code != 0 || lines.Count(x => x.EndsWith("PASS") || x.EndsWith("FAIL")) != 30)
+                { testArea.Content = Text("Проверка не выполнена: " + string.Join(" ", lines), 12.5, "Danger"); return; }
+                testCache[cacheKey] = lines; if (Sel() == l) testArea.Content = TestTable(lines, false);
             });
         }
         // Строка verification-input для одной схемы, как её строит verify-v2: имя, профиль улучшений, Dolorium extra, Nefastium extra, Fission extra, сетка.
@@ -278,9 +273,11 @@ namespace ReactorLab
         {
             var outer = new StackPanel(); outer.Children.Add(Header(lines, loading));
             outer.Children.Add(Table("validate (protium)", new[] { "Штатно", "Outlet off", "Vent off", "Замена топлива" }, new[] { "Порядок обмена 1", "Порядок обмена 2" },
-                (r, c) => { string[] k = { "обмен " + r + " штатно", "обмен " + r + " Outlet off", "обмен " + r + " Vent off", "замена топлива, обмен " + r }; return lines.FirstOrDefault(x => x.StartsWith(k[c])); }, loading));
-            if (Sel() != null && Sel().G.IndexOf('E') < 0) outer.Children.Add(Table("validate-profit (profit)", new[] { "Сетка вперёд", "Сетка назад", "Outlet, затем Inlet", "Inlet, затем Outlet" }, new[] { "Без паузы", "С паузой между циклами" },
-                (r, c) => lines.FirstOrDefault(x => x.StartsWith("порядок " + c + " пауза " + r + ":")), loading));
+                (r, c) => { string[] k = { "штатно", "Outlet off", "Vent off", "замена топлива" }; return lines.FirstOrDefault(x => x.StartsWith("обмен " + r + " " + k[c] + ":")); }, loading));
+            outer.Children.Add(Table("validate-profit (profit)", new[] { "Сетка вперёд", "Сетка назад", "Outlet, затем Inlet", "Inlet, затем Outlet" }, new[] { "Штатно", "Замена топлива", "Выгорание", "Outlet off", "Vent off" },
+                (r, c) => { string[] k = { "штатно", "замена топлива", "выгорание", "Outlet off", "Vent off" }; return lines.FirstOrDefault(x => x.StartsWith("обмен " + (c + 2) + " " + k[r] + ":")); }, loading));
+            outer.Children.Add(Table("Выгорание", new[] { "Без замены топлива" }, new[] { "Порядок обмена 1", "Порядок обмена 2" },
+                (r, c) => lines.FirstOrDefault(x => x.StartsWith("обмен " + r + " выгорание:")), loading));
             return outer;
         }
         UIElement EarlyTable(List<string> lines, bool loading)

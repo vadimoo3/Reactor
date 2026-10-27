@@ -29,7 +29,7 @@ namespace ReactorLab
             using (var s = Assembly.GetExecutingAssembly().GetManifestResourceStream("ReactorEngine.exe"))
             { b = new byte[s.Length]; int o = 0; while (o < b.Length) o += s.Read(b, o, b.Length - o); }
             string hash; using (var md5 = MD5.Create()) hash = BitConverter.ToString(md5.ComputeHash(b)).Replace("-", "").Substring(0, 12);
-            string dir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ReactorLab");
+            string dir = Program.SelfTestDir != null ? Path.Combine(Program.SelfTestDir, "engine") : Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ReactorLab");
             Directory.CreateDirectory(dir);
             Exe = Path.Combine(dir, "engine-" + hash + ".exe");
             if (!File.Exists(Exe)) File.WriteAllBytes(Exe, b);

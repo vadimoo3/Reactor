@@ -29,7 +29,7 @@ namespace ReactorLab
             var found = new List<Layout>();
             if (Directory.Exists(Results))
                 foreach (var f in Directory.EnumerateFiles(Results, "*.txt", SearchOption.AllDirectories))
-                { if (f.IndexOf("\\work\\", StringComparison.OrdinalIgnoreCase) >= 0 || f.IndexOf("\\.trash\\", StringComparison.OrdinalIgnoreCase) >= 0) continue; var l = LayoutFile.Parse(f); if (l != null) { l.Rel = f.Substring(Results.Length + 1).Replace('\\', '/'); found.Add(l); } }
+                { var rel = f.Substring(Results.Length + 1).Replace('\\', '/'); if (rel.Split('/').Any(part => part == "work" || part == "runs" || part == ".trash")) continue; var l = LayoutFile.Parse(f); if (l != null) { l.Rel = rel; found.Add(l); } }
             var favs = Favs();
             if (val["uiSort"] == "fav") found = found.Where(l => favs.Contains(l.Rel)).ToList();
             found = val["uiSort"] == "power" ? found.OrderByDescending(l => { var sd = LayoutFile.Std(l); return sd == null ? -1 : sd[0]; }).ThenByDescending(l => l.Time).ToList() : found.OrderByDescending(l => l.Time).ToList();
