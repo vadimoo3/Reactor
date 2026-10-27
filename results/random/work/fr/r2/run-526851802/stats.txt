@@ -1,0 +1,2 @@
+seed=526851802 attempts=258662 analytic_pass=143117 simulated=300 normal_and_cooldown_passed=300 budget_Qa=100
+best_score=-1105.54 see best.txt

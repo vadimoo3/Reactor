@@ -1,0 +1,4 @@
+#define main original_search_main
+#include "search.cpp"
+#undef main
+int main(int argc,char**argv){for(int i=0;i<N;i++){if(i%19)a[i].push_back(i-1);if(i%19<18)a[i].push_back(i+1);if(i>=19)a[i].push_back(i-19);if(i+19<N)a[i].push_back(i+19);}ifstream f(S("plFile"));if(!f){cerr<<"нет файла "<<S("plFile")<<"\n";return 2;}Cand c;f>>c.power>>c.heat>>c.cool>>c.cost>>c.av>>c.hs>>c.ex>>c.re>>c.ch>>c.seed;string row;while(f>>row)c.g+=row;if((int)c.g.size()!=N){cerr<<"схема должна быть 19x16\n";return 2;}sim_steps=(int)PI("plSteps");ofstream tr("final-tests.csv");tr<<"method,fault,max_E_fraction,max_V_fraction,max_C_fraction,max_hull_fraction,steady_C_B\n";for(int m=0;m<2;m++)for(int fault=0;fault<3;fault++){bool ok=sim(c,m,fault,&tr);cout<<"обмен "<<m<<" "<<(fault==0?"штатно":fault==1?"Outlet off":"Vent off")<<" "<<(ok?"PASS":"FAIL")<<"\n";}expiry_test=true;for(int m=0;m<2;m++)cout<<"замена топлива, обмен "<<m<<" "<<(sim(c,m,0)?"PASS":"FAIL")<<"\n";return 0;}

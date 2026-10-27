@@ -1,0 +1,14 @@
+#include "rx.h"
+using namespace std;const int N=304;vector<int>a[N];string types=".KPVEOICR124";mt19937 rng(2026102712);double U(){return (rng()+.5)/4294967296.;}struct Fuel{int core,pulse;double energy,heat,cost;int life;};map<char,Fuel> fuels;int duration=3600;int cores(char c){return fuels.count(c)?fuels[c].core:0;}
+// Профиль топлива (fuel-profile.tsv) берётся из выбранного топлива: импульс, энергия, тепло, цена, срок.
+void loadFuels(){fuels['1']={1,1,M.fuelPow,M.fuelHeat,PR.f1,(int)M.fuelLife};fuels['2']={2,4,M.fuelPow,M.fuelHeat,PR.f2,(int)M.fuelLife};fuels['4']={4,12,M.fuelPow,M.fuelHeat,PR.f4,(int)M.fuelLife};duration=(int)M.fuelLife;}
+// Тип очередного стержня: исходные доли 90/8/2 среди разрешённых размеров.
+char pickRod(){int w[3]={PI("anA1")?90:0,PI("anA2")?8:0,PI("anA4")?2:0};int s=w[0]+w[1]+w[2];if(!s)return '1';int v=rng()%s;return v<w[0]?'1':v<w[0]+w[1]?'2':'4';}
+struct Check{bool ok;string reason;int tick;double net;};
+// Профиль risave(2): Active Venting куплен (+1 уровень), остальные улучшения исходные.
+Check test(const string&g,int reverse){array<int,128>n{};for(char c:g)n[c]++;array<double,N>cap{},h{};double k=n['K'],p=n['P'],hc=1e-6+M.hullPer*p,rate=M.rate0*M.bEx*2*(1+M.capBoost*k),vc=M.vc0*(1+M.sinkBoost*M.bHs*p),ec=M.ec0*M.bEx*(1+M.reBoost*M.bRe*p),vr=M.vr0*(1+M.ventBoost*(M.bAv+1)*k),sale=M.sales(k);double hull=0,income=0,fuel=0;for(auto [c,f]:fuels)fuel+=n[c]*f.cost;for(int i=0;i<N;i++)cap[i]=g[i]=='V'?vc:g[i]=='E'?ec:g[i]=='C'?M.ccap:g[i]=='K'?M.kcap:0;int branches=0;for(int i=0;i<N;i++)if(g[i]=='O')for(int j:a[i])branches+=cap[j]>0;
+for(int t=0;t<duration*2;t++){double power=0,b=hull>0?M.boost(max(1.,hull)):1.;if(t<duration)for(int i=0;i<N;i++)if(int c=cores(g[i])){int pulse=fuels.at(g[i]).pulse,ref=0,ns=0;for(int j:a[i]){pulse+=cores(g[j]);ref+=g[j]=='R';ns+=cap[j]>0;}power+=fuels.at(g[i]).energy*pulse*(1+M.refl*ref)*b;double q=fuels.at(g[i]).heat*pulse*pulse/c;if(ns)for(int j:a[i]){if(cap[j]>0)h[j]+=q/ns;}if(!ns)hull+=q;}income+=min(power,sale);
+for(int z=0;z<N;z++){int i=reverse?N-1-z:z;if(g[i]=='E')for(int j:a[i])if(cap[j]>0){double q=(h[i]+h[j])*cap[j]/(cap[i]+cap[j])-h[j];q=clamp(q,-rate,rate);q=clamp(q,-h[j],h[i]);h[i]-=q;h[j]+=q;}}
+double per=branches?min(rate,hull/branches):0;for(int z=0;z<N;z++){int i=reverse?N-1-z:z;if(g[i]=='O')for(int j:a[i])if(cap[j]>0){double q=min(per,hull);h[j]+=q;hull-=q;}if(g[i]=='I')for(int j:a[i]){double q=min(rate,h[j]);h[j]-=q;hull+=q;}}
+for(int i=0;i<N;i++)if(g[i]=='V')h[i]=max(0.,h[i]-vr);if(hull>=hc)return {false,"hull",t+1,0};for(int i=0;i<N;i++)if(cap[i]>0&&h[i]>=cap[i])return {false,string("component_")+g[i],t+1,0};hull=max(0.,hull-hc*M.drain);if(t>=duration-1){double sum=hull;for(double x:h)sum+=x;if(sum<1)return {true,"pass",t+1,(income-fuel*1e6)/(t+1)};}}
+return {false,"cooldown_timeout",duration*2,0};}

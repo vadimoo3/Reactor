@@ -1,0 +1,5 @@
+exact_count 8
+type quad
+attempts 219
+seed 1357001060
+budget_Qa 100

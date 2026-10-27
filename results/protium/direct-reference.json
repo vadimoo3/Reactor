@@ -1,0 +1,37 @@
+{
+  "attempts": 100000,
+  "best": {
+    "sold_B": 21000.0,
+    "power_B": 21000.0,
+    "heat_B": 7500,
+    "cooling_B": 8719.392,
+    "cost_Qa": 19.13477772,
+    "seed": 128,
+    "counts": {
+      "K": 151,
+      "V": 80,
+      "O": 20,
+      "R": 24,
+      "1": 6,
+      "P": 23
+    },
+    "grid": [
+      "KKKVKKKKVKKKKVKKKKK",
+      "KVVOVKKVOVKVVOVKVKK",
+      "VOVVVKKKVVVOVVVVOVK",
+      "KVVVOVRKVOVVVVOVVVK",
+      "KVOVVR1RKVVVOVVVVOV",
+      "KKVVKKRKKVOVVVVOVVK",
+      "KVVOVKVKKKVKVOVVVKK",
+      "VOVVKVOVRKKRKVVVOVK",
+      "KVKRKKVR1RR1RVOVVKK",
+      "KKR1RKKKRKKRKKVKKKK",
+      "KKKRKKKKKKKKKKKKKKK",
+      "KKKKKKKKKKKKKKKKKRK",
+      "KKKKKKKKKKKKKRKKR1R",
+      "KKKKKKKKKKKKR1RKKRK",
+      "KKKKKKKKKKKKKRKPPPP",
+      "PPPPPPPPPPPPPPPPPPP"
+    ]
+  }
+}

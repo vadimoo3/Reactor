@@ -1,0 +1,1 @@
+attempts 330 constructed 330 thermal_screen_pass 330 simulated_pass 330 best_net_B 46.8386

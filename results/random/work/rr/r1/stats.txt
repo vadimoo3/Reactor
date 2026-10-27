@@ -1,0 +1,14 @@
+random_weights_generated 135520
+random_weights_no_fuel 12611
+random_weights_passed 352
+random_weights_rod_not_allowed 107114
+random_weights_simulated 15795
+uniform_generated 67760
+uniform_rod_not_allowed 67760
+failure_component_C 724
+failure_component_E 1397
+failure_component_K 4621
+failure_component_V 2280
+failure_cooldown_timeout 41
+failure_hull 6380
+best_net_B 101.203

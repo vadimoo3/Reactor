@@ -1,0 +1,2 @@
+status FOUND exact_count 8 type quad
+attempts 219 constructed 219 thermal_screen_pass 219 simulated_pass 219 best_net_B 60.8779

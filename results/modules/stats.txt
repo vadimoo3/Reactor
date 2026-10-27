@@ -1,0 +1,1 @@
+draws 500000 unique 131607 budget_pass 36972 simulated 25134 passed 205 best_net_B 16000

@@ -1,0 +1,368 @@
+{
+  "Vent1": {
+    "sheet": 1,
+    "row": 1,
+    "column": 1,
+    "pixels": 756
+  },
+  "Vent2": {
+    "sheet": 1,
+    "row": 1,
+    "column": 2,
+    "pixels": 756
+  },
+  "Vent3": {
+    "sheet": 1,
+    "row": 1,
+    "column": 3,
+    "pixels": 744
+  },
+  "Vent4": {
+    "sheet": 1,
+    "row": 1,
+    "column": 4,
+    "pixels": 784
+  },
+  "Vent5": {
+    "sheet": 1,
+    "row": 1,
+    "column": 5,
+    "pixels": 770
+  },
+  "Exchanger1": {
+    "sheet": 1,
+    "row": 2,
+    "column": 1,
+    "pixels": 520
+  },
+  "Exchanger2": {
+    "sheet": 1,
+    "row": 2,
+    "column": 2,
+    "pixels": 584
+  },
+  "Exchanger3": {
+    "sheet": 1,
+    "row": 2,
+    "column": 3,
+    "pixels": 624
+  },
+  "Exchanger4": {
+    "sheet": 1,
+    "row": 2,
+    "column": 4,
+    "pixels": 676
+  },
+  "Exchanger5": {
+    "sheet": 1,
+    "row": 2,
+    "column": 5,
+    "pixels": 692
+  },
+  "Outlet1": {
+    "sheet": 1,
+    "row": 3,
+    "column": 1,
+    "pixels": 448
+  },
+  "Outlet2": {
+    "sheet": 1,
+    "row": 3,
+    "column": 2,
+    "pixels": 528
+  },
+  "Outlet3": {
+    "sheet": 1,
+    "row": 3,
+    "column": 3,
+    "pixels": 598
+  },
+  "Outlet4": {
+    "sheet": 1,
+    "row": 3,
+    "column": 4,
+    "pixels": 638
+  },
+  "Outlet5": {
+    "sheet": 1,
+    "row": 3,
+    "column": 5,
+    "pixels": 722
+  },
+  "Inlet1": {
+    "sheet": 1,
+    "row": 4,
+    "column": 1,
+    "pixels": 448
+  },
+  "Inlet2": {
+    "sheet": 1,
+    "row": 4,
+    "column": 2,
+    "pixels": 514
+  },
+  "Inlet3": {
+    "sheet": 1,
+    "row": 4,
+    "column": 3,
+    "pixels": 592
+  },
+  "Inlet4": {
+    "sheet": 1,
+    "row": 4,
+    "column": 4,
+    "pixels": 612
+  },
+  "Inlet5": {
+    "sheet": 1,
+    "row": 4,
+    "column": 5,
+    "pixels": 710
+  },
+  "Coolant1": {
+    "sheet": 1,
+    "row": 5,
+    "column": 1,
+    "pixels": 420
+  },
+  "Coolant2": {
+    "sheet": 1,
+    "row": 5,
+    "column": 2,
+    "pixels": 444
+  },
+  "Coolant3": {
+    "sheet": 1,
+    "row": 5,
+    "column": 3,
+    "pixels": 512
+  },
+  "Coolant4": {
+    "sheet": 1,
+    "row": 5,
+    "column": 4,
+    "pixels": 516
+  },
+  "Coolant5": {
+    "sheet": 1,
+    "row": 5,
+    "column": 5,
+    "pixels": 564
+  },
+  "Plate1": {
+    "sheet": 1,
+    "row": 6,
+    "column": 1,
+    "pixels": 756
+  },
+  "Plate2": {
+    "sheet": 1,
+    "row": 6,
+    "column": 2,
+    "pixels": 756
+  },
+  "Plate3": {
+    "sheet": 1,
+    "row": 6,
+    "column": 3,
+    "pixels": 652
+  },
+  "Plate4": {
+    "sheet": 1,
+    "row": 6,
+    "column": 4,
+    "pixels": 724
+  },
+  "Plate5": {
+    "sheet": 1,
+    "row": 6,
+    "column": 5,
+    "pixels": 756
+  },
+  "Fuel1-1": {
+    "sheet": 2,
+    "row": 1,
+    "column": 1,
+    "pixels": 320
+  },
+  "Fuel1-2": {
+    "sheet": 2,
+    "row": 1,
+    "column": 3,
+    "pixels": 696
+  },
+  "Fuel1-4": {
+    "sheet": 2,
+    "row": 1,
+    "column": 5,
+    "pixels": 708
+  },
+  "Fuel2-1": {
+    "sheet": 2,
+    "row": 2,
+    "column": 1,
+    "pixels": 336
+  },
+  "Fuel2-2": {
+    "sheet": 2,
+    "row": 2,
+    "column": 3,
+    "pixels": 732
+  },
+  "Fuel2-4": {
+    "sheet": 2,
+    "row": 2,
+    "column": 5,
+    "pixels": 708
+  },
+  "Fuel3-1": {
+    "sheet": 2,
+    "row": 3,
+    "column": 1,
+    "pixels": 360
+  },
+  "Fuel3-2": {
+    "sheet": 2,
+    "row": 3,
+    "column": 3,
+    "pixels": 726
+  },
+  "Fuel3-4": {
+    "sheet": 2,
+    "row": 3,
+    "column": 5,
+    "pixels": 708
+  },
+  "Fuel4-1": {
+    "sheet": 2,
+    "row": 4,
+    "column": 1,
+    "pixels": 336
+  },
+  "Fuel4-2": {
+    "sheet": 2,
+    "row": 4,
+    "column": 3,
+    "pixels": 668
+  },
+  "Fuel4-4": {
+    "sheet": 2,
+    "row": 4,
+    "column": 5,
+    "pixels": 700
+  },
+  "Fuel5-1": {
+    "sheet": 2,
+    "row": 5,
+    "column": 1,
+    "pixels": 336
+  },
+  "Fuel5-2": {
+    "sheet": 2,
+    "row": 5,
+    "column": 3,
+    "pixels": 756
+  },
+  "Fuel5-4": {
+    "sheet": 2,
+    "row": 5,
+    "column": 5,
+    "pixels": 708
+  },
+  "Fuel6-1": {
+    "sheet": 3,
+    "row": 1,
+    "column": 1,
+    "pixels": 368
+  },
+  "Fuel6-2": {
+    "sheet": 3,
+    "row": 1,
+    "column": 3,
+    "pixels": 640
+  },
+  "Fuel6-4": {
+    "sheet": 3,
+    "row": 1,
+    "column": 5,
+    "pixels": 704
+  },
+  "Fuel7-1": {
+    "sheet": 2,
+    "row": 6,
+    "column": 1,
+    "pixels": 368
+  },
+  "Fuel7-2": {
+    "sheet": 2,
+    "row": 6,
+    "column": 3,
+    "pixels": 734
+  },
+  "Fuel7-4": {
+    "sheet": 2,
+    "row": 6,
+    "column": 5,
+    "pixels": 708
+  },
+  "Reflector1": {
+    "sheet": 2,
+    "row": 7,
+    "column": 1,
+    "pixels": 464
+  },
+  "Reflector2": {
+    "sheet": 2,
+    "row": 7,
+    "column": 2,
+    "pixels": 512
+  },
+  "Reflector3": {
+    "sheet": 2,
+    "row": 7,
+    "column": 3,
+    "pixels": 552
+  },
+  "Reflector4": {
+    "sheet": 2,
+    "row": 7,
+    "column": 4,
+    "pixels": 606
+  },
+  "Reflector5": {
+    "sheet": 2,
+    "row": 7,
+    "column": 5,
+    "pixels": 680
+  },
+  "Capacitor1": {
+    "sheet": 2,
+    "row": 8,
+    "column": 1,
+    "pixels": 408
+  },
+  "Capacitor2": {
+    "sheet": 2,
+    "row": 8,
+    "column": 2,
+    "pixels": 496
+  },
+  "Capacitor3": {
+    "sheet": 2,
+    "row": 8,
+    "column": 3,
+    "pixels": 636
+  },
+  "Capacitor4": {
+    "sheet": 2,
+    "row": 8,
+    "column": 4,
+    "pixels": 774
+  },
+  "Capacitor5": {
+    "sheet": 2,
+    "row": 8,
+    "column": 5,
+    "pixels": 784
+  }
+}

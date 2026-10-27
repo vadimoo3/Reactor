@@ -1,0 +1,2 @@
+seed=123456 attempts=100000 analytic_pass=34654 simulated=50 normal_and_cooldown_passed=0 budget_Qa=100
+No candidate passed normal operation and cooldown. Increase attempts or top_to_verify.
